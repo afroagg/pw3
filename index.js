@@ -1,6 +1,10 @@
 const express = require('express');
 
+const ingrediente = require('./controller/ingredienteController')
+
 const app = express();
+
+app.use('/', ingrediente);
 
 app.get('/', (req, res)=>{
 
