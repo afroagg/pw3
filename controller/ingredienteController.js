@@ -1,16 +1,9 @@
 const express = require('express');
 
-/*CONFIGURAÇÃO DAS ROTAS DE CATEGORIA*/
 const router = express.Router();
 
-/* IMPORT DA MODEL DE CATEGORIA */
 const modelIngrediente = require('../model/ingredienteModel');
 
-/* PARAMETROS DE ROTAS (QUALQUER VERBO):
-1 - NOME DA ROTA - REPRESENTADO POR UMA STRING
-2 - CALLBACK QUE TRATA REQUISIÇÃO (req) E RESPOSTA (res)
-*/
-/*ROTAS DE CRUD DE CATEGORIAS:*/
 router.get('/listarIngrediente', (req, res)=>{
 
     console.log('teste rota get ingrediente');
@@ -18,9 +11,8 @@ router.get('/listarIngrediente', (req, res)=>{
 });
 
 router.post('/inserirIngrediente', (req, res)=>{
-    let{nome_ingredientes} = req.body;
-    console.log(nome_ingredientes);
-    res.send('OK!')
+    console.log('teste rota post ingrediente');
+    res.send('teste rota get ingrediente2')
 });
 
 router.put('/alterarIngrediente', (req, res)=>{
