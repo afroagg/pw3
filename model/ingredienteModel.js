@@ -12,4 +12,6 @@ const Ingrediente = connection.define(
     }
 );
 
+//Ingrediente.sync({force:true});
+
 module.exports = Ingrediente;
