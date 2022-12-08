@@ -91,7 +91,7 @@ router.put('/alterarIngrediente', (req, res)=>{
     );
 });
 
-router.delete('/excluirIngrediente', (req, res)=>{
+router.delete('/excluirIngrediente/:id', (req, res)=>{
     let {id} = req.params;
 
     modelIngrediente.destroy(
